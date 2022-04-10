@@ -114,7 +114,7 @@ with open(file_to_save,"w") as txt_file:
             winning_percentage=float(candidate_votes[candidate_name])/float(total_votes)*100
         # To do: print out each candidate's name, vote count, and percentage of
         # votes to the terminal.   
-        candidate_results=f"{candidate_name}: {vote_percentage:.1f}% ({candidate_votes[candidate_name]})\n"
+        candidate_results=f"{candidate_name}: {vote_percentage:.1f}% ({candidate_votes[candidate_name]:,})\n"
         print(candidate_results)
         txt_file.write(candidate_results)
 
